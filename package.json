@@ -1,0 +1,20 @@
+{
+  "name": "ts-combinators",
+  "description": "ParserCombinators in Typescript",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.1.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.9.9"
+  }
+}
