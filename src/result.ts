@@ -1,16 +1,14 @@
-export namespace Result {
-    export interface Ok<T> {
-        _tag: "ok"
-        value: T
-    }
-
-    export interface Err<E> {
-        _tag: "err"
-        error: E
-    }
+export interface Ok<T> {
+    _tag: "ok"
+    value: T
 }
 
-type ResultInner<T, E> = Result.Ok<T> | Result.Err<E>
+export interface Err<E> {
+    _tag: "err"
+    error: E
+}
+
+type ResultInner<T, E> = Ok<T> | Err<E>
 
 export class Result<T, E> {
     private readonly inner: ResultInner<T, E>

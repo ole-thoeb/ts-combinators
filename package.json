@@ -3,8 +3,10 @@
   "description": "ParserCombinators in Typescript",
   "version": "0.0.1",
   "license": "MIT",
+  "main": "lib/index.ts",
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.test.ts"
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "build": "tsc"
   },
   "dependencies": {},
   "devDependencies": {
